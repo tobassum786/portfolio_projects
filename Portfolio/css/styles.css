@@ -1,2 +1,89 @@
 @import url
  ('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+
+:root {
+	--base-clr: #fff;
+	--primary-clr: #000;
+	--acsent-clr: #165d6c;
+	--light-clr: #d0dee1;
+	/*	spacing-units*/
+	--sp-xs: 0.75rem;
+	--sp-sm: 1rem;
+	--sp-md: 1.5rem;
+	--sp-lg: 2rem;
+	--sp-xl: 4rem;
+	/*	typography*/
+	--base-font-size: 12px;
+	--flude-typo-ratio: 0.9;
+	--rem: calc(var(base-font-size) + var(--flude-typo-ratio) * 1vw);
+}
+
+
+*,
+::after,
+::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Sore', sans-serif;
+}
+
+body {
+	font-size: var(--rem);
+}
+
+a, ul, li {
+	list-style: none;
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+	text-align: center;
+}
+
+.container {
+	max-width: 1366px;
+}
+
+nav {
+	position: fixed;
+	padding: 16px 100px;
+	background-color: var(--acsent-clr);
+}
+
+section {
+	margin-block-end: 100px;
+}
+
+.nav-bar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	z-index: 999;
+	line-height: 60px;
+
+	& .nav_menu-list {
+		display: flex;
+		align-items: center;
+		gap: 32px;
+		transition: .3s;
+
+		& .nav_menu-link {
+			text-transform: capitalize;
+			color: var(--light-clr);
+			padding: 5px;
+			transition: .3s;
+
+			&:hover {
+				border-bottom: 2px solid var(--base-clr);
+				transition: .3s;
+				opacity: .9;
+			}
+		}
+	}
+
+}
