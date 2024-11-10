@@ -143,6 +143,7 @@ button {
 		font-weight: 700;
 		line-height: 1.2;
 		padding-bottom: var(--sp-md);
+		z-index: 1;
 
 		& span {
 			font-size: var(--text-md);
@@ -159,11 +160,25 @@ button {
 		position: absolute;
 		display: block;
 		width: 700px;
-		top: 30px;
-		right: 500px;
-/*		transform: rotate(30deg);*/
+		top: 10px;
+		left: -150px;
+		transform: rotate(-120deg);
 		height: 400px;
 		background: url("../Assets/images/hero_at.png") right no-repeat;
+		background-size: 700px 700px;
+		opacity: 0.7;
+	}
+
+	&::before {
+		content: '';
+		position: absolute;
+		display: block;
+		width: 700px;
+		bottom: 40px;
+		right: 150px;
+		transform: rotate(120deg);
+		height: 450px;
+		background: url("../Assets/images/hero_at---.png") right no-repeat;
 		background-size: 700px 700px;
 		opacity: 0.7;
 	}
