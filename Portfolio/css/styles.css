@@ -82,15 +82,16 @@ button {
 	font-size: var(--text-sm);
 	text-transform: var(--text-transform);
 	border-radius: var(--border-radius);
-	background-color: var(--light-clr);
+	background-color: var(--acsent-clr);
+	color: var(--light-clr);
 	transition: .3s;
-	font-weight: 500;
+	font-weight: 700;
 	letter-spacing: 1px;
 	margin-top: var(--sp-md);
 
 	&:hover {
-		background-color: var(--acsent-clr);
-		color: var(--light-clr);
+		background-color: var(--light-clr);
+		color: var(--acsent-clr);
 		transition: .3s;
 	}
 }
@@ -175,7 +176,7 @@ button {
 		display: block;
 		width: 700px;
 		bottom: 40px;
-		right: 150px;
+		right: 50px;
 		transform: rotate(120deg);
 		height: 450px;
 		background: url("../Assets/images/hero_at---.png") right no-repeat;
